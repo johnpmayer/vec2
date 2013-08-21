@@ -16,7 +16,7 @@
 
 module Public.Vec2.Vec2 where
 
-import Matrix2D (Matrix2D, matrix)
+import Transform2D (Transform2D, matrix)
 
 {- 2D Vector -}
 
@@ -83,7 +83,7 @@ crossVecMag : Vec2Ext a -> Vec2Ext b -> Float
 crossVecMag v1 v2 =
   v1.x * v2.y - v1.y * v2.x
 
-vecTranslate : Vec2Ext a -> Matrix2D
+vecTranslate : Vec2Ext a -> Transform2D
 vecTranslate v = matrix 1 0 0 1 v.x v.y
 
 -- find the minimum distance and offset of a line segment and a point
