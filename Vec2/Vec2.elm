@@ -16,7 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -}
 
-module Public.Vec2.Vec2 where
+module Vec2.Vec2 where
 
 import Transform2D (Transform2D, matrix)
 
