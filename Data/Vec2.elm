@@ -18,6 +18,13 @@
 
 module Data.Vec2 where
 
+{-|
+
+Data.Vec2
+=========
+
+-}
+
 import Transform2D (Transform2D, matrix)
 
 {- 2D Vector -}
