@@ -1,0 +1,9 @@
+{ "version": "0.2.2"
+, "summary": "Another Vec2 library"
+, "description": "Another Vec2 library"
+, "license": "AGPL-3"
+, "repository": "https://github.com/johnpmayer/vec2.git"
+, "exposed-modules": ["Data.Vec2"]
+, "elm-version": "0.12"
+, "dependencies": {}
+}
