@@ -18,13 +18,13 @@
 
 module Data.Vec2 where
 
-import Transform2D (Transform2D, matrix)
+import Transform2D exposing (Transform2D, matrix)
 
 {- 2D Vector -}
 
-type Vec2Ext a = { a | x : Float, y : Float }
+type alias Vec2Ext a = { a | x : Float, y : Float }
 
-type Vec2 = Vec2Ext {}
+type alias Vec2 = Vec2Ext {}
 
 origin : Vec2
 origin = { x = 0, y = 0 }
@@ -63,8 +63,8 @@ midVec v1 v2 = scaleVec (1/2) <| addVec v1 v2
 extractVec : Vec2Ext a -> Vec2
 extractVec v = { x = v.x, y = v.y }
 
-sumVec : [ Vec2Ext a ] -> Vec2
-sumVec = foldl addVec origin . map extractVec
+sumVec : List (Vec2Ext a) -> Vec2
+sumVec = List.foldl addVec origin << List.map extractVec
 
 magnitude : Vec2Ext a -> Float
 magnitude v = sqrt <| v.x * v.x + v.y * v.y
