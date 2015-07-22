@@ -1,7 +1,7 @@
 {
     "version": "1.0.0",
     "summary": "A minimalist vector math library",
-    "repository": "https://github.com/USER/PROJECT.git",
+    "repository": "https://github.com/johnpmayer/vec2.git",
     "license": "AGPL-3",
     "source-directories": [
         "."

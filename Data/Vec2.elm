@@ -18,6 +18,8 @@
 
 module Data.Vec2 where
 
+{-| -}
+
 import Transform2D exposing (Transform2D, matrix)
 
 {- 2D Vector -}
